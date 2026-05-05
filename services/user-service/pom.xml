@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>user-service</artifactId>
+    <packaging>jar</packaging>
     <!-- <n>User Service - Auth, Registration, Profile</n> -->
 
     <dependencies>

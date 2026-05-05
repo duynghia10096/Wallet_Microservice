@@ -1,27 +1,28 @@
 # Multi-stage build for Spring Boot application
 # Stage 1: Build the application
-FROM maven:3.9.4-openjdk-17-slim AS build
+FROM maven:3.9.4-eclipse-temurin-21 AS build
 
 WORKDIR /app
 
 # Copy pom.xml and download dependencies (for better caching)
-COPY pom.xml .
-RUN mvn dependency:go-offline -B
+COPY . .
+
 
 # Copy source code and build
-COPY src ./src
+
 RUN mvn clean package -DskipTests
 
 # Stage 2: Runtime image
-FROM openjdk:17-jre-slim
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
 # Create non-root user
-RUN groupadd -r appuser && useradd -r -g appuser appuser
+# RUN groupadd -r appuser && useradd -r -g appuser appuser
+RUN addgroup -S appuser && adduser -S appuser -G appuser
 
 # Copy the JAR file from build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/services/wallet-service/target/*.jar app.jar
 
 # Change ownership to non-root user
 RUN chown -R appuser:appuser /app

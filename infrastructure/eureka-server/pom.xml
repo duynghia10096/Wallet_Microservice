@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>eureka-server</artifactId>
+    <packaging>jar</packaging>
     <!-- <n>Eureka Service Discovery</n> -->
 
     <dependencies>

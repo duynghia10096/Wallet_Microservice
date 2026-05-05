@@ -10,6 +10,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>notification-service</artifactId>
+    <packaging>jar</packaging>
     <!-- <n>Notification Service - Email, Push, SMS</n> -->
 
     <dependencies>

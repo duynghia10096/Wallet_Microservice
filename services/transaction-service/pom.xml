@@ -7,11 +7,12 @@
         <groupId>com.wallet</groupId>
         <artifactId>wallet-platform</artifactId>
         <version>1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     
     <artifactId>transaction-service</artifactId>
+     <packaging>jar</packaging>
     <!-- <n>Transaction Service - Transfer, Deposit, Withdraw</n> -->
 
     <dependencies>
