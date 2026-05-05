@@ -1,0 +1,4 @@
+com\wallet\gateway\filter\JwtAuthFilter.class
+com\wallet\gateway\ApiGatewayApplication.class
+com\wallet\gateway\config\GatewayConfig.class
+com\wallet\gateway\filter\JwtAuthFilter$Config.class

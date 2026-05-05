@@ -1,0 +1,24 @@
+# Filebeat configuration for Wallet Platform
+# Collects logs from microservices and sends to Logstash
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/wallet/*.log
+  fields:
+    service: wallet-platform
+  fields_under_root: true
+
+# Output to Logstash
+output.logstash:
+  hosts: ["logstash:5044"]
+
+# Logging
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat
+  keepfiles: 7
+  permissions: 0644

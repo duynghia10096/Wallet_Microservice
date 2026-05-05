@@ -1,0 +1,6 @@
+com\wallet\notification\infrastructure\persistence\entity\NotificationLogEntity.class
+com\wallet\notification\application\service\NotificationLogRepository.class
+com\wallet\notification\application\service\NotificationService.class
+com\wallet\notification\infrastructure\messaging\NotificationEventConsumer.class
+com\wallet\notification\infrastructure\persistence\entity\NotificationLogEntity$NotificationLogEntityBuilder.class
+com\wallet\notification\NotificationServiceApplication.class

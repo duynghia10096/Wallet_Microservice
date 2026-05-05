@@ -1,0 +1,16 @@
+# Logstash configuration
+http.host: "0.0.0.0"
+path.config: /usr/share/logstash/pipeline
+path.logs: /var/log/logstash
+
+# Pipeline settings
+pipeline.workers: 1
+pipeline.batch.size: 125
+pipeline.batch.delay: 50
+
+# Dead letter queue
+dead_letter_queue.enable: true
+path.dead_letter_queue: /usr/share/logstash/dead_letter_queue
+
+# Monitoring
+xpack.monitoring.enabled: false

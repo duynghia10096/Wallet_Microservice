@@ -1,0 +1,17 @@
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\application\dto\AuthResponse.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\application\dto\LoginRequest.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\application\dto\RegisterRequest.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\application\dto\UserDto.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\application\service\UserApplicationService.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\exception\InvalidCredentialsException.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\exception\UserAlreadyExistsException.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\exception\UserNotFoundException.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\model\KycStatus.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\model\User.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\model\UserStatus.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\domain\repository\UserRepository.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\infrastructure\persistence\entity\UserJpaEntity.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\infrastructure\persistence\repository\UserJpaRepository.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\infrastructure\persistence\repository\UserRepositoryImpl.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\interfaces\rest\controller\UserController.java
+E:\Microservice\wallet-microservices\services\user-service\src\main\java\com\wallet\user\UserServiceApplication.java
