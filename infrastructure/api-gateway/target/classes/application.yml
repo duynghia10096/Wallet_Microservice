@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -80,7 +80,17 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,gateway
+        include: health, info, prometheus, metrics
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+  observations:
+    key-values:
+      application: ${spring.application.name}
+      environment: production
+      
 
 # logging:
 #   file:
